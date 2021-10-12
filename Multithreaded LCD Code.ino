@@ -80,7 +80,7 @@ char* stringArray[]={"Check it out... ",
 
 // This should probably be done inside setup(), but whatever.
 // initialize the LCD library with the numbers of the interface pins
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(14, 10, 3, 4, 3, 2);
 
 //FUNCTIONS
 
