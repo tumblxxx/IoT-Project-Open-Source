@@ -123,7 +123,7 @@ void loop() {
       if( Mic.getValue() > 76 )   // second layer control
       { 
           digitalWrite(layerA1, LOW);
-            delay(50);
+            delay(70);
       }
       else 
       {
@@ -133,7 +133,7 @@ void loop() {
        if(   Mic.getValue() > 82 )   // third layer control
       { 
           digitalWrite(layerA2, LOW);
-            delay(50);
+            delay(70);
       }
       else 
       {
@@ -143,7 +143,7 @@ void loop() {
        if(   Mic.getValue() > 88 )   // fourth layer control
       { 
           digitalWrite(layerA3, LOW);
-            delay(50);
+            delay(70);
       }
       else 
       {
@@ -151,6 +151,6 @@ void loop() {
       }
     
   
-  } // end of loop
+  }
   
  
