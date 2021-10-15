@@ -15,9 +15,9 @@ This code uses 1Sheeld and an arduino Uno board to control a 4x4x4 LED matrix us
 */
   
    
-#define CUSTOM_SETTINGS
-#define INCLUDE_PUSH_BUTTON_SHIELD
-#define INCLUDE_MIC_SHIELD
+define CUSTOM_SETTINGS
+define INCLUDE_PUSH_BUTTON_SHIELD
+define INCLUDE_MIC_SHIELD
 
 /* Include 1Sheeld library. */
 #include <OneSheeld.h>
