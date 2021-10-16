@@ -1,4 +1,4 @@
-#include <LiquidCrystal.h>
+include <LiquidCrystal.h>
 
 LiquidCrystal lcd(12, 11, 5, 8, 9, 1);
 
@@ -16,7 +16,7 @@ void setup()
 {
 lcd.clear();
 lcd.begin(16, 2);
-lcd.print("WELCOME");
+lcd.print("SELAMAT DATANG");
 
 pinMode(trigPin, OUTPUT);
 pinMode(echoPin, INPUT);
