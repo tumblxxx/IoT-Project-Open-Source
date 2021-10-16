@@ -1,13 +1,13 @@
 //Digital Arduino Clock Code
 
 
-#include <LiquidCrystal.h>
+include <LiquidCrystal.h>
 
 
 LiquidCrystal lcd(12,11,5,4,3,2);
 
 
-int h=12;
+int h=15;
 int m;
 int s;
 int flag;
@@ -59,7 +59,7 @@ void loop()
  {
   h=1;
  }
- lcd.setCursor(0,1);
+ lcd.setCursor(0,2);
 
  lcd.print("HAVE A NICE DAY");
 
