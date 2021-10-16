@@ -1,0 +1,6 @@
+Switch PoolPump "Pool Pump" <swimmingpool> (grp1) {http=">[ON:POST:http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/POOLPUMP/ON] >[OFF:POST:http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/POOLPUMP/OFF] <[http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/POOLPUMP/STATE:1500:REGEX((.*?))]", autoupdate="true"}
+Switch WaterFall "Water Fall" <waterfall> (grp1) {http=">[ON:POST:http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/WATERFALLPUMP/ON] >[OFF:POST:http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/WATERFALLPUMP/OFF] <[http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/WATERFALLPUMP/STATE:1500:REGEX((.*?))]", autoupdate="true"}
+Switch PoolLights "Pool Lights" (grp1) {http=">[ON:POST:http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/POOLLIGHTS/ON] >[OFF:POST:http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/POOLLIGHTS/OFF] <[http://<YOUR_IP_ADDRESS_AND_PORT>/DEVICES/POOLLIGHTS/STATE:1500:REGEX((.*?))]", autoupdate="true"}
+Number pooltemp "Pool Water Temp [%.2f F]" <temperature> (grp1) {http="<[http://<YOUR_IP_ADDRESS_AND_PORT>/SENSORS/POOLTEMP:30000:REGEX((.*?))]"}
+Number solartemp "Solar Water Temp [%.2f F]" <temperature> (grp1) {http="<[http://<YOUR_IP_ADDRESS_AND_PORT>/SENSORS/SOLARTEMP:30000:REGEX((.*?))]"}
+Number outsidetemp "Outside Air Temp [%.2f F]" <temperature> (grp1) {http="<[http://<YOUR_IP_ADDRESS_AND_PORT>/SENSORS/OUTSIDETEMP:30000:REGEX((.*?))]"}
