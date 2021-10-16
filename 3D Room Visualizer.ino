@@ -1,7 +1,7 @@
 #include <Servo.h>
 Servo servox; Servo servoy;
-int servoPosx = 130;
-int servoPosy = 130;
+int servoPosx = 180;
+int servoPosy = 180;
 int pingPin = 3;
 int echoPin = 4;
 long duration;
@@ -10,9 +10,9 @@ long ping()
   // Send out PING))) signal pulse
   pinMode(pingPin, OUTPUT);
   digitalWrite(pingPin, LOW);
-  delayMicroseconds(2);
+  delayMicroseconds(20);
   digitalWrite(pingPin, HIGH);
-  delayMicroseconds(10);
+  delayMicroseconds(100);
   digitalWrite(pingPin, LOW);
   
   //Get duration it takes to receive echo
