@@ -20,10 +20,10 @@ namespace WebServerTask
         //Variables to hold temperature data
         private static string poolTemperature = "--.--";
         private static string solarTemperature = "--.--";
-        private static string outsideTemperature = "--.--";
+        //private static string outsideTemperature = "--.--";
 
         //Property to expose the Temperature Data
-        public static string PoolTemperature
+       //public static string PoolTemperature
         {
             get
             {   //Lock the variable incase the timer is tring to write to it
