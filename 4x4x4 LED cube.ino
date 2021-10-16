@@ -20,7 +20,7 @@ define INCLUDE_PUSH_BUTTON_SHIELD
 define INCLUDE_MIC_SHIELD
 
 /* Include 1Sheeld library. */
-#include <OneSheeld.h>
+include <OneSheeld.h>
  
 
 // Define the pin connections of the LED matrix (columns and layer).
@@ -113,7 +113,7 @@ void loop() {
      if( Mic.getValue() > 70 )  // first layer control
       { 
           digitalWrite(layerA0, LOW);
-            delay(50);                 // To make the display clearer. It could be modified to make if faster or slower.
+            delay(500);                 // To make the display clearer. It could be modified to make if faster or slower.
       }
       else 
       {
@@ -123,11 +123,11 @@ void loop() {
       if( Mic.getValue() > 76 )   // second layer control
       { 
           digitalWrite(layerA1, LOW);
-            delay(70);
+            delay(500);
       }
       else 
       {
-        digitalWrite(layerA1, HIGH);
+        digitalWrite(layerA1, LOW);
       }
       
        if(   Mic.getValue() > 82 )   // third layer control
