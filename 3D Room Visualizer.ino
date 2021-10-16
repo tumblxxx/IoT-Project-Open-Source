@@ -1,4 +1,4 @@
-#include <Servo.h>
+include <Servo.h>
 Servo servox; Servo servoy;
 int servoPosx = 180;
 int servoPosy = 180;
@@ -31,10 +31,10 @@ return microseconds / 29 / 2;
 }
 void setup() {
   // put your setup code here, to run once:
-Serial.begin(9600);
+Serial.begin(115200);
 servox.attach(9);
-servox.write(130);
-servoy.attach(10);
+servox.write(180);
+servoy.attach(100);
 servoy.write(30);
 }
 
