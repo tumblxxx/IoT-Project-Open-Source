@@ -34,9 +34,9 @@ void loop()
    //Ultrasonic1
   long duration, distance;       
   digitalWrite(trigPin, LOW);        
-  delayMicroseconds(2);              
+  delayMicroseconds(20); //change to 20 from 2   
   digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);           
+  delayMicroseconds(1000); //change to 1000 from 10          
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
   distance = (duration/2) / 29.1;
@@ -65,12 +65,12 @@ void loop()
       Serial.print(distance2);
       Serial.println(" cm2");
       digitalWrite(LED, HIGH);
-      delay(500);
+      delay(5000); //change from 500 to 5000
     }
     else
     {
       digitalWrite(LED, LOW);
-      delay(3000);
+      delay(300); //change from 3000 to 300
       Serial.println("FULL");
       Blynk.email("jo********@gmail.com", "Subject: TrashBin", "Full"); //if trash full will sending you email every 15minutes 
       Blynk.notify("Hey, Tong Sampah Penuh Segera Dikosongkan"); //Notify if trash full with blynk
