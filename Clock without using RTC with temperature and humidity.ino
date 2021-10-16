@@ -4,7 +4,7 @@
 #include <SimpleDHT.h>
 
 // initialize the library with the numbers of the interface pins
-LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
+LiquidCrystal lcd(7, 8, 9, 10, 11, 15);
 volatile int sec, minute = 0, hour = 0;
 int b_h = 5;
 int b_m = 6;
@@ -17,13 +17,13 @@ SimpleDHT11 dht11;
 void setup() {
 
   // set up the LCD's number of columns and rows:
-  lcd.begin(16, 2);
+  lcd.begin(16, 3);
 
   lcd.setCursor(0, 0);
   lcd.print("Ahmad Ordikhani");
   lcd.setCursor(0, 1);
   lcd.print("Clk without RTC");
-  delay(3000);
+  delay(300);
   lcd.clear();
 
   pinMode(b_h, INPUT_PULLUP);
