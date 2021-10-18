@@ -21,9 +21,9 @@ void setup() {
 
   lcd.setCursor(0, 0);
   lcd.print("Ahmad Ordikhani");
-  lcd.setCursor(0, 1);
+  lcd.setCursor(0, 2);
   lcd.print("Clk without RTC");
-  delay(300);
+  delay(3000);
   lcd.clear();
 
   pinMode(b_h, INPUT_PULLUP);
@@ -115,7 +115,7 @@ void loop() {
 
     lcd.setCursor(0, 0);
     //sec=millis()/1000;
-    delay(1000);
+    delay(500);
     lcd.print("Time: ");
     if (hour < 10)
     {
