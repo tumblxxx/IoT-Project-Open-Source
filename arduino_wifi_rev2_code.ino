@@ -63,7 +63,7 @@ void setup() {
   pinMode(buttonPin, INPUT);      // set up both buttons
   pinMode(reconnectPin, INPUT);
   Serial.begin(9600);             // begin Serial
-  setLEDColor(255, 0, 0);         // set LED color to red
+  setLEDColor(0, 255, 255);         // set LED color to red
   clear();
   textAt(25, 25, "Connecting");
   send();
@@ -85,7 +85,7 @@ void loop() {
     setLEDColor(0, 255, 0);  // green (connected)
     if (digitalRead(buttonPin) == HIGH){
       bridge1.virtualWrite(V6, 1);
-      delay(150);
+      delay(1500);
     }
   }
 //  Serial.println(
@@ -125,7 +125,7 @@ void loop() {
     }
     else{
       manualControl();
-      delay(100);
+      delay(1000);
     }
   }
   Blynk.virtualWrite(V2, rssiPercent());
