@@ -32,7 +32,7 @@ void setup() {
   digitalWrite(ledPin, HIGH);
   digitalWrite(button1Pin, HIGH);
   digitalWrite(button2Pin, HIGH);
-  Serial.begin(9600);
+  Serial.begin(11600);
   for (int i=0;i<4;i++) myservos[i].attach(servosPin[i]);  
   setInitialPos();
 }
@@ -127,7 +127,7 @@ void loop() {
       break;      
   }
   // Wait
-  delay(25);
+  delay(250);
 }
 
 void setInitialPos() {
